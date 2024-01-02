@@ -1,0 +1,134 @@
+/*------------------------  reponsive ------------------------------*/
+/* @media screen and (max-width: 1000px) {
+    #presentation h1 {
+        font-size: 2rem;
+    }
+} */
+@media screen and (max-width: 920px) {
+    #presentation h1 {
+        font-size: 2rem;
+    }
+
+    .conteneurPresentationEntreprise p {
+        font-size: 1rem;
+
+    }
+
+    em {
+        font-size: 0.9rem;
+    }
+
+    .tech-Polyvalent-1 p {
+        font-size: 1rem;
+    }
+
+    .tech-Polyvalent-1 img {
+        width: 350px;
+    }
+
+    .tech-Polyvalent-2 img {
+        width: 350px;
+    }
+
+    .contener-article img {
+        height: 100px;
+    }
+
+    #nos-différents-articles h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap : 5px;
+    }
+
+    .tech-Polyvalent-1 p {
+        font-size: 0.9rem;
+        padding: 20px;
+    }
+
+    .tech-Polyvalent-2 p {
+        font-size: 0.9rem;
+        padding: 20px;
+    }
+
+    .tech-Polyvalent-1 img {
+        width: 350px;
+    }
+
+    .tech-Polyvalent-2 img {
+        width: 350px;
+    }
+
+    .tech-Polyvalent-1 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .tech-Polyvalent-1 em {
+
+        text-align: center;
+
+    }
+
+    .tech-Polyvalent-1 p {
+        text-align: center;
+
+    }
+
+    .tech-Polyvalent-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tech-Polyvalent-2 em {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 647px) {
+    #presentation h1 {
+        font-size: 1.5rem;
+        padding: 30px;
+    }
+
+    .conteneurPresentationEntreprise {
+        margin: 0px;
+    }
+
+    .conteneurPresentationEntreprise p {
+        font-size: 0.9rem;
+        
+    }
+
+    .form-contener {
+        width: 90%; /* Ajustez la largeur pour les écrans plus petits */
+    }
+}
+
+ @media screen and (max-width: 506px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-bottom: 5px;
+    }
+
+    .contener-Expert p{
+        font-size:  1.2rem;;
+    }
+
+    .conteneurPresentationEntreprise p {
+        font-size: 0.7rem;
+        font-weight: 900;
+        line-height: 20px;
+    }
+} 
