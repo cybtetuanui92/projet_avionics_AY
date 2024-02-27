@@ -1,22 +1,28 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avionics</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../responsive/responsive.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-  </head>
+<?php
+  require_once 'header.php';
+?>
 
   <body>
     <header>
-      <img src="../logo/logo-header-avionics.png" alt="Logo-Header-avionics">
-      <nav>
-        <a href="#nos-différents-articles">Articles techniques</a>
-        <a href="#Matériel-medical">Articles médicaux aéroportés</a>
-        <a href="#contact">Contactez-nous</a>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <img src="../pictures/logo/logo-avionics.webp" alt="Logo-Header-avionics" width="85" height="85">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nos-différents-articles">Articles techniques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Matériel-medical">Articles médicaux aéroportés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contactez-nous</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -96,63 +102,12 @@
       <section id="nos-différents-articles">
         <h2>- Nos "technicals" articles -</h2>
         <div class="conteneur">
-          <div class="c-a">
-            <div class="contener-article">
-              <img src="../pictures/anemometer.jpg" alt="anemometer">
-
-              <div class="titleAndDescription">
-                <h4>Mach airspead indicator (INDICATEUR DE VITESSE)</h4>
-
-                <p class="description">
-                  Anémomètre BOEING <br>
-                  Marque : Astro Instruments Service Corp <br>
-                  Ref : 4057800-902 <br>Prix : 1 250 $
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="c-a">
-            <div class="contener-article">
-              <div class="img-Article">
-                <img src="../pictures/bat-3.jpg" alt="bat">
-              </div>
-              <div class="titleAndDescription">
-                <h4>Battery aircraft (BATTERIE)</h4>
-
-                <p class="description">
-                  Batterie CESSNA <br>
-                  Marque : Sabena technics <br>
-                  Ref : 4057800-902 <br>
-                  Prix : 2 300 $
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="c-a">
-            <div class="contener-article">
-              <div class="img-articles">
-                <img
-                  src="../pictures/calculateur_avio1.jpg"
-                  alt="calculateur_avio1"
-                >
-              </div>
-              <div class="titleAndDescription">
-                <h4>Embedded Gps Inertial (CENTRALE INERTIELLE)</h4>
-
-                <p class="description">
-                  Calculateur GPS et de navigation inertielle amélioré <br>
-                  Marque : Honeywell Aerospace <br>
-                  Ref : 4057800-902 <br>
-                  Prix : 600 000 $
-                </p>
-              </div>
-            </div>
-          </div>
+          <!-- ICI DYNAMISME JAVASCRIPT -->
         </div>
         <div class="lien-vers-Ecom">
-          <a href="../html/eCom.html"
+          <a href="../php/404.html"
             >Prêt au décollage, achetez-ICI
-            <img src="../logo/logoJetLien.png" alt="logoJetLien">
+            <img src="../pictures/logo/logoJetLien.png" alt="logoJetLien">
           </a>
         </div>
       </section>
@@ -214,38 +169,21 @@
           </div>
         </div>
         <div class="lien-vers-Ecom">
-          <a href="../html/eCom.html"
+          <a href="../php/404.html"
             >Prêt au décollage, achetez-ICI
-            <img src="../logo/logoJetLien.png" alt="logoJetLien">
+            <img src="../pictures/logo/logoJetLien.png" alt="logoJetLien">
           </a>
         </div>
       </section>
-       
-      <section id="contact">
-        <h2>- Contact -</h2>
-        <div class="form-contener">
-          <!-- pas de script de gestion de formulaire (ERROR W3C normal du coup) -->
-          <form action="">
-            <input type="text" placeholder=" Nom " id="nom" name="nom">
-            <input type="text" placeholder=" Prénom " id="prenom" name="prenom">
-            <input type="email" placeholder=" Email " name="email">
-            <select name="Choisir son technicien" id="OptionTech">
-              <option value="1 : EXPERT AVIONIQUE :">Expert Avionique</option>
-              <option value="2 : EXPERT VECTEUR :">Expert Vecteur</option>
-            </select>
-            <textarea cols="30" rows="10" placeholder=" Votre demande "></textarea>
-            <button>Envoyer</button>
-          </form>
-        </div>
-      </section>
+      <!-- APPEL FORMULAIRE -->
+      <?php  include 'new.html.php'; ?>
+      <!--  CDN pour Bootstrap JavaScript et dépendances -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="../js/script.article.js"></script>
     </main>
-
-    <footer>
-      <ul>
-        <li><img src="../logo/footerY(2).png" alt="Y"></li>
-        <li><img src="../logo/avionFooter(2).png" alt="avionFooter"></li>
-        <li><img src="../logo/footerA(2).png" alt="A"></li>
-      </ul>
-    </footer>
   </body>
-</html>
+<?php
+  require_once 'footer.php';
+?>
